@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Vol Québec">
+<meta name="theme-color" content="#D22730">
+<title>Guide de voyage — Rafael</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+:root{
+--red:#D22730; --blue:#1F6FB2; --dark:#1B1B1B; --grey:#666666;
+--bg:#FAFAFA; --card:#FFFFFF; --line:#E7E7EA; --boxbg:#F4F8FC;
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+html,body{height:100%;}
+body{
+margin:0; background:var(--bg); color:var(--dark);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased;
+display:flex; flex-direction:column;
+height:100dvh; overflow:hidden;
+}
+header{
+padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;
+background:linear-gradient(180deg,#fff,#fff 85%,rgba(255,255,255,0));
+flex:0 0 auto; z-index:5;
+}
+.top-row{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;}
+.brand{display:flex; align-items:center; gap:8px;}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--red);}
+.brand span{font-weight:700; font-size:15px; color:var(--dark);}
+.stepcount{font-size:12px; font-weight:700; color:var(--red); background:#FCEBEC; padding:4px 9px; border-radius:20px;}
+.progress{height:4px; background:var(--line); border-radius:4px; overflow:hidden;}
+.progress > div{height:100%; background:var(--red); border-radius:4px; transition:width .25s ease;}
+.dots{display:flex; gap:6px; justify-content:center; margin-top:10px;}
+.dots button{
+width:26px; height:26px; border-radius:50%; border:none; background:#EDEDF0;
+color:var(--grey); font-size:11px; font-weight:700; font-family:inherit;
+}
+.dots button.active{background:var(--red); color:#fff;}
+
+main{flex:1 1 auto; overflow:hidden; position:relative;}
+.track{display:flex; height:100%; width:600%; transition:transform .32s cubic-bezier(.4,0,.2,1);}
+.panel{width:calc(100% / 6); height:100%; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:4px 18px 24px;}
+
+.eyebrow{color:var(--red); font-weight:700; font-size:12px; letter-spacing:.04em; text-transform:uppercase; margin:6px 0 2px;}
+h1.title{font-size:23px; margin:0 0 4px; line-height:1.15;}
+.subtitle{color:var(--grey); font-size:13px; margin:0 0 16px;}
+.intro{font-size:14px; color:var(--grey); line-height:1.5; margin:0 0 16px;}
+
+h2.sec{font-size:15px; margin:20px 0 8px; color:var(--dark);}
+ul.plain, ol.plain{margin:0 0 4px; padding-left:20px;}
+ul.plain li, ol.plain li{margin-bottom:9px; font-size:14.5px; line-height:1.45;}
+ol.plain{counter-reset:item;}
+ol.plain li{list-style:none; counter-increment:item; position:relative; padding-left:26px;}
+ol.plain li::before{
+content:counter(item); position:absolute; left:-2px; top:0;
+background:var(--dark); color:#fff; width:19px; height:19px; border-radius:50%;
+font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center;
+}
+b{color:var(--dark);}
+
+.box{
+background:var(--boxbg); border-left:4px solid var(--blue); border-radius:8px;
+padding:11px 13px; margin:14px 0; font-size:13.5px; color:#333; line-height:1.45;
+}
+.box.warn{background:#FCEEEE; border-left-color:var(--red);}
+.box .label{display:block; font-weight:800; font-size:11px; letter-spacing:.04em; margin-bottom:4px;}
+.box.warn .label{color:var(--red);}
+.box:not(.warn) .label{color:var(--blue);}
+
+.check-list{list-style:none; margin:0 0 6px; padding:0;}
+.check-list li{
+display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--line);
+}
+.check-list li:last-child{border-bottom:none;}
+.check-list input[type=checkbox]{
+appearance:none; -webkit-appearance:none; width:22px; height:22px; min-width:22px;
+border:2px solid #C9C9CE; border-radius:6px; margin-top:1px; position:relative; background:#fff;
+}
+.check-list input[type=checkbox]:checked{background:var(--red); border-color:var(--red);}
+.check-list input[type=checkbox]:checked::after{
+content:""; position:absolute; left:6px; top:2px; width:6px; height:11px;
+border:solid white; border-width:0 2px 2px 0; transform:rotate(40deg);
+}
+.check-list label{font-size:14.5px; line-height:1.4;}
+.check-list li.done label{color:#9a9a9e; text-decoration:line-through;}
+
+.hero{
+font-weight:700; font-size:24px; margin:2px 0 6px; color:var(--dark);
+}
+.hero + .subtitle{margin-bottom:14px;}
+.a2hs{
+display:flex; gap:10px; align-items:center; background:#111; color:#fff; border-radius:12px;
+padding:11px 12px; margin-bottom:16px; font-size:12.5px; line-height:1.4;
+}
+.a2hs .icon{font-size:20px;}
+.a2hs button{
+margin-left:auto; background:rgba(255,255,255,.15); border:none; color:#fff; border-radius:8px;
+padding:6px 9px; font-size:11px; font-family:inherit;
+}
+.bravo-emoji{font-size:34px; text-align:center; margin:6px 0 2px;}
+
+nav.bottom{
+flex:0 0 auto; display:flex; gap:10px; padding:10px 16px calc(env(safe-area-inset-bottom) + 12px);
+background:#fff; border-top:1px solid var(--line);
+}
+nav.bottom button{
+flex:1; border:none; border-radius:12px; padding:14px 10px; font-size:15px; font-weight:700;
+font-family:inherit;
+}
+#prevBtn{background:#F0F0F2; color:var(--dark);}
+#prevBtn:disabled{opacity:.35;}
+#nextBtn{background:var(--red); color:#fff;}
+#nextBtn:disabled{background:#F0F0F2; color:var(--dark); opacity:.5;}
+</style>
+</head>
+<body>
+
+<header>
+<div class="top-row">
+<div class="brand"><span class="dot"></span><span>Guide de voyage</span></div>
+<div class="stepcount" id="stepcount">Étape 1/6</div>
+</div>
+<div class="progress"><div id="progressBar" style="width:16.6%"></div></div>
+<div class="dots" id="dots"></div>
+</header>
+
+<main>
+<div class="track" id="track">
+
+<!-- PANEL 1 -->
+<section class="panel">
+<div class="a2hs" id="a2hs">
+<span class="icon">➕</span>
+<span>Ajoute cette page à ton écran d'accueil : appuie sur <b>Partager</b> (le carré avec la flèche) puis <b>« Sur l'écran d'accueil »</b> — tu auras une icône comme une vraie appli.</span>
+<button onclick="document.getElementById('a2hs').style.display='none'">OK</button>
+</div>
+<div class="hero">Ton guide de voyage ✈️</div>
+<p class="subtitle">Paris → Québec — 16 août 2026</p>
+<p class="intro">Salut Rafael ! C'est ton premier vol tout seul, direction le Canada pour tes études — un peu de trac, c'est normal. Ce guide t'accompagne étape par étape. Fais glisser vers la gauche ou utilise les boutons en bas pour avancer.</p>
+
+<div class="eyebrow">Étape 1/6</div>
+<h1 class="title">Avant le départ</h1>
+<p class="subtitle">Dimanche 16 août — vol à 14:10 depuis Paris CDG, terminal 2C</p>
+
+<h2 class="sec">À avoir sur toi (bagage cabine, jamais en soute)</h2>
+<ul class="check-list" id="checklist"></ul>
+
+<h2 class="sec">Ta valise</h2>
+<ul class="plain">
+<li>2 valises en soute incluses gratuitement (23 kg max chacune).</li>
+<li>Dans le bagage cabine : une tenue de rechange + trousse de toilette de base, au cas où la valise en soute arriverait en retard. Médicaments aussi.</li>
+<li>Habille-toi en plusieurs couches — il fait souvent frais dans l'avion.</li>
+<li>Bas de contention pendant le vol — ils favorisent la circulation sanguine et réduisent le risque de jambes lourdes ou de caillot (thrombose veineuse) sur un vol aussi long (7h35).</li>
+</ul>
+
+<h2 class="sec">Ton téléphone</h2>
+<ul class="plain">
+<li>Installe l'eSIM GoMoWorld avant de partir — elle ne s'active PAS toute seule : il faudra ouvrir l'appli et l'activer toi-même à ton arrivée à Montréal (voir étape 4).</li>
+<li>Charge-le à 100 % et prends ton chargeur (+ batterie externe si tu en as une) en cabine.</li>
+<li>Télécharge quelques films/séries/musiques hors-ligne avant de partir.</li>
+</ul>
+
+<div class="box">
+<span class="label">ASTUCE</span>
+Glisse dans ton sac : lingettes désinfectantes, écouteurs perso, gourde vide (à remplir après la sécurité), un livre ou un jeu. La veille, prépare ton sac calmement et couche-toi tôt — départ pour l'aéroport tôt le matin.
+</div>
+</section>
+
+<!-- PANEL 2 -->
+<section class="panel">
+<div class="eyebrow">Étape 2/6</div>
+<h1 class="title">À l'aéroport en France</h1>
+<p class="subtitle">Roissy-Charles-de-Gaulle, terminal 2C — arrive vers 11h (3h avant le vol)</p>
+
+<ol class="plain">
+<li><b>Dépose tes bagages.</b> Comptoir Air Canada ou borne libre-service, terminal 2C. Ton PNR est sur ta carte d'embarquement ou ton billet. Garde passeport et documents à portée de main.</li>
+<li><b>Contrôle de sûreté.</b> Retire ceinture, montre, objets métalliques ; sors ordinateur/tablette. Liquides &lt; 100 ml dans un sachet transparent.</li>
+<li><b>Contrôle de police (PAF).</b> Le policier vérifie ton passeport <b>et</b> ton autorisation de sortie du territoire (+ copie carte d'identité de maman) — tu es mineur et tu voyages seul.</li>
+<li><b>Trouve ta porte.</b> Écrans d'affichage ou appli Air Canada. Dirige-toi vers la porte environ 1h avant le départ.</li>
+<li><b>En attendant.</b> Tu peux manger, aller aux toilettes, flâner — un repas est de toute façon servi à bord.</li>
+<li><b>Embarquement.</b> Appel par groupes/zones. Présente carte d'embarquement + passeport à la porte.</li>
+</ol>
+
+<div class="box">
+<span class="label">ASTUCE</span>
+En cas de doute, il y a toujours un agent Air Canada pour t'aider — demande en français, tout le monde est habitué.
+</div>
+</section>
+
+<!-- PANEL 3 -->
+<section class="panel">
+<div class="eyebrow">Étape 3/6</div>
+<h1 class="title">Embarquement et à bord</h1>
+<p class="subtitle">Vol AC 871 · Paris CDG → Montréal YUL · siège 32H · durée 7h35</p>
+
+<h2 class="sec">T'installer</h2>
+<ul class="plain">
+<li>Trouve ton siège (numéros au-dessus des rangées).</li>
+<li>Bagage cabine dans le coffre au-dessus, roulettes vers l'intérieur ; petit sac sous le siège devant toi.</li>
+<li>Avant de fermer le coffre, sors ce dont tu auras besoin : écouteurs, chargeur, livre, lingettes, documents.</li>
+<li>Une lingette sur la tablette et les accoudoirs, ça ne fait jamais de mal.</li>
+</ul>
+
+<h2 class="sec">Consignes de sécurité</h2>
+<ul class="plain">
+<li>Regarde/écoute la démonstration — utile pour savoir où sont les issues et le gilet de sauvetage.</li>
+<li>Ceinture attachée même quand le signal est éteint — les turbulences arrivent sans prévenir.</li>
+<li>Mode avion dès la fermeture des portes.</li>
+</ul>
+
+<h2 class="sec">Comment fonctionne ton siège</h2>
+<ul class="plain">
+<li>Bouton d'inclinaison sur l'accoudoir ; tablette repliable devant toi.</li>
+<li>Écran tactile (films, séries, musique, carte du vol) — casque fourni ou le tien.</li>
+<li>Bouton d'appel de l'hôtesse/steward au-dessus de ton siège.</li>
+<li>Prise USB pour recharger ton téléphone.</li>
+</ul>
+
+<h2 class="sec">Te connecter au wifi</h2>
+<p class="intro" style="margin:0 0 6px;">Mode avion + wifi activé → réseau « <b>ACWiFi.com</b> » → ouvre <b>acwifi.com</b> dans ton navigateur. Si ton numéro Aéroplan est lié à ta réservation, ça devrait être gratuit.</p>
+
+<h2 class="sec">Pendant le vol</h2>
+<ul class="plain">
+<li>Repas + collation servis 1-2h après le décollage. Demande de l'eau régulièrement.</li>
+<li>Oreilles bouchées : bâille, avale ta salive ou mâche un chewing-gum.</li>
+<li>Turbulences : normal, ceinture attachée, l'équipage gère ça tout le temps.</li>
+<li>Besoin de quelque chose ? Bouton d'appel, c'est fait pour ça.</li>
+</ul>
+
+<div class="box">
+<span class="label">MES SUGGESTIONS</span>
+Dégourdis-toi les jambes dans l'allée de temps en temps. Privilégie l'eau au café/soda. Essaie de somnoler pour amortir le décalage (Montréal = 6h de moins que Paris). Garde tes documents dans une pochette facile d'accès. Et profite, c'est le début de l'aventure !
+</div>
+</section>
+
+<!-- PANEL 4 -->
+<section class="panel">
+<div class="eyebrow">Étape 4/6</div>
+<h1 class="title">Arrivée à Montréal</h1>
+<p class="subtitle">Atterrissage 15:45 (heure locale) — aéroport Montréal-Trudeau (YUL)</p>
+
+<h2 class="sec">Te reconnecter</h2>
+<ul class="plain">
+<li>Sors le téléphone du mode avion, connecte-toi au wifi gratuit de l'aéroport pour prévenir papa et maman.</li>
+<li>Ton eSIM GoMoWorld ne s'active PAS toute seule : ouvre l'appli GoMoWorld et active-la toi-même maintenant que tu es arrivé à Montréal.</li>
+<li>En attendant, wifi de l'aéroport puis de ton logement.</li>
+<li>Pour te repérer à l'arrivée : <a href="https://www.admtl.com/vforcesite/map#/?location=Arrivals%20Level&lang=fr-CA" target="_blank" rel="noopener">plan interactif de l'aéroport</a>.</li>
+</ul>
+
+<h2 class="sec">Passer la douane et l'immigration</h2>
+<div class="box warn">
+<span class="label">À SAVOIR</span>
+Montréal est ton premier point d'entrée au Canada, même si Québec est ta destination finale. C'est ici que se joue tout : douane, immigration, et la délivrance de ton permis d'études.
+</div>
+
+<ol class="plain">
+<li>Suis les panneaux « Vols de correspondance / Connecting flights ».</li>
+<li>Borne automatisée : réponds aux questions (motif : études), récupère le reçu.</li>
+<li>Donne le reçu à un agent, qui t'oriente vers le comptoir « permis d'études ».</li>
+<li>Présente passeport, lettre d'introduction, CAQ, offre d'admission, preuves financières. Réponds calmement aux questions.</li>
+<li>L'agent imprime ton permis d'études et l'agrafe dans ton passeport.</li>
+<li>Avant de t'éloigner : vérifie nom, date de naissance, établissement (Université Laval). Erreur ? Dis-le tout de suite.</li>
+</ol>
+
+<div class="box">
+<span class="label">PATIENCE</span>
+Ça peut prendre 1h à 3h selon l'affluence — normal, tous les étudiants étrangers passent par là. Ta correspondance a 3h05 d'avance ; en cas de vol manqué, Air Canada te remet automatiquement sur le suivant.
+</div>
+</section>
+
+<!-- PANEL 5 -->
+<section class="panel">
+<div class="eyebrow">Étape 5/6</div>
+<h1 class="title">Liaison vers Québec</h1>
+<p class="subtitle">Vol AC 7940 (Air Canada Express - Jazz) · Montréal → Québec · 18:50 → 19:41</p>
+
+<ol class="plain">
+<li>Récupère tes 2 valises au tapis de livraison.</li>
+<li>Redépose-les au comptoir de transfert (« Baggage Drop / Connecting flights ») — obligatoire après la douane.</li>
+<li>Repasse un contrôle de sécurité pour la zone des vols intérieurs.</li>
+<li>Repère ta porte sur les écrans (vol AC 7940) et dirige-toi vers elle.</li>
+<li>Du temps devant toi ? Mange ou bois quelque chose — pas de repas sur ce vol de 51 min.</li>
+<li>Embarquement pour un avion plus petit (CRJ900) — parfois par bus, c'est normal.</li>
+<li>Ton siège : 15C. Vol court, sans wifi — détends-toi, l'arrivée est proche !</li>
+</ol>
+
+<div class="box">
+<span class="label">ASTUCE</span>
+Dernière ligne droite. Pas besoin de courir : les panneaux « Connecting flights » sont bien indiqués et le personnel est là pour orienter les voyageurs en correspondance.
+</div>
+</section>
+
+<!-- PANEL 6 -->
+<section class="panel">
+<div class="eyebrow">Étape 6/6</div>
+<h1 class="title">Arrivée à Québec</h1>
+<p class="subtitle">Atterrissage 19:41 — aéroport international Jean-Lesage (YQB)</p>
+
+<h2 class="sec">Tu y es presque</h2>
+<ul class="plain">
+<li>Petit aéroport, facile à s'orienter.</li>
+<li>Récupère tes bagages au tapis — vol intérieur, pas de nouveau contrôle douanier.</li>
+<li>Dirige-toi vers le hall d'arrivée pour retrouver la personne qui vient te chercher.</li>
+</ul>
+
+<h2 class="sec">Dernières choses à faire</h2>
+<ul class="plain">
+<li>Message à papa et maman pour confirmer que tu es bien arrivé.</li>
+<li>Une fois installé, mets tes documents importants en lieu sûr, et fais-en une photo de secours sur ton téléphone.</li>
+</ul>
+
+<div class="bravo-emoji">🎉</div>
+<div class="box">
+<span class="label">BRAVO</span>
+Bienvenue au Québec, Rafael — tu as géré ton premier vol en solo comme un pro. Bonne installation et bonne rentrée à l'Université Laval !
+</div>
+</section>
+
+</div>
+</main>
+
+<nav class="bottom">
+<button id="prevBtn">← Précédent</button>
+<button id="nextBtn">Suivant →</button>
+</nav>
+
+<script>
+(function(){
+var STORAGE_KEY = 'rafael-trip-guide-v1';
+var total = 6;
+var current = 0;
+var track = document.getElementById('track');
+var dotsEl = document.getElementById('dots');
+var progressBar = document.getElementById('progressBar');
+var stepcount = document.getElementById('stepcount');
+var prevBtn = document.getElementById('prevBtn');
+var nextBtn = document.getElementById('nextBtn');
+
+var checklistItems = [
+['doc-passport', "Passeport + AVE"],
+['doc-intro', "Lettre d'introduction IRCC imprimée"],
+['doc-ast', "AST signée + copie carte d'identité de maman"],
+['doc-caq', "CAQ imprimé"],
+['doc-admission', "Offre d'admission Université Laval imprimée"],
+['doc-finances', "Preuves financières à jour"],
+['doc-billet', "Billet Air Canada"],
+['doc-argent', "Carte bancaire"]
+];
+
+function loadState(){
+try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }catch(e){ return {}; }
+}
+function saveState(state){
+try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){}
+}
+
+function buildChecklist(){
+var state = loadState();
+var ul = document.getElementById('checklist');
+checklistItems.forEach(function(item){
+var id = item[0], label = item[1];
+var li = document.createElement('li');
+var checked = !!state[id];
+if(checked) li.className = 'done';
+li.innerHTML = '<input type="checkbox" id="'+id+'"'+(checked?' checked':'')+'><label for="'+id+'">'+label+'</label>';
+ul.appendChild(li);
+li.querySelector('input').addEventListener('change', function(e){
+var s = loadState();
+s[id] = e.target.checked;
+saveState(s);
+li.className = e.target.checked ? 'done' : '';
+});
+});
+}
+
+function buildDots(){
+for(var i=0;i<total;i++){
+var b = document.createElement('button');
+b.textContent = (i+1);
+b.addEventListener('click', function(idx){ return function(){ goTo(idx); }; }(i));
+dotsEl.appendChild(b);
+}
+}
+
+function render(){
+track.style.transform = 'translateX(-' + (current * (100/total)) + '%)';
+stepcount.textContent = 'Étape ' + (current+1) + '/' + total;
+progressBar.style.width = ((current+1)/total*100) + '%';
+Array.prototype.forEach.call(dotsEl.children, function(b, i){
+b.className = (i === current) ? 'active' : '';
+});
+prevBtn.disabled = current === 0;
+nextBtn.textContent = current === total-1 ? 'Terminé ✓' : 'Suivant →';
+nextBtn.disabled = current === total-1;
+var state = loadState();
+state.__lastStep = current;
+saveState(state);
+}
+
+function goTo(i){
+current = Math.max(0, Math.min(total-1, i));
+render();
+}
+
+prevBtn.addEventListener('click', function(){ goTo(current-1); });
+nextBtn.addEventListener('click', function(){ goTo(current+1); });
+
+// swipe support
+var touchStartX = null;
+main = document.querySelector('main');
+main.addEventListener('touchstart', function(e){ touchStartX = e.changedTouches[0].screenX; }, {passive:true});
+main.addEventListener('touchend', function(e){
+if(touchStartX === null) return;
+var dx = e.changedTouches[0].screenX - touchStartX;
+if(Math.abs(dx) > 45){
+if(dx < 0) goTo(current+1); else goTo(current-1);
+}
+touchStartX = null;
+}, {passive:true});
+
+buildChecklist();
+buildDots();
+var state = loadState();
+if(typeof state.__lastStep === 'number') current = state.__lastStep;
+render();
+
+// hide "add to home screen" banner if already installed / already dismissed
+if(window.navigator.standalone === true){
+var el = document.getElementById('a2hs');
+if(el) el.style.display = 'none';
+}
+
+// Enable offline use once hosted on https (no-op on file:// / iCloud preview)
+if('serviceWorker' in navigator){
+window.addEventListener('load', function(){
+navigator.serviceWorker.register('sw.js').catch(function(){ /* not on https, ignore */ });
+});
+}
+})();
+</script>
+</body>
+</html>
