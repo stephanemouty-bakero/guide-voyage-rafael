@@ -1,0 +1,18 @@
+{
+  "name": "Guide de voyage — Rafael",
+  "short_name": "Vol Québec",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#D22730",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "data:image/png;base64,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",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
