@@ -45,8 +45,8 @@ color:var(--grey); font-size:11px; font-weight:700; font-family:inherit;
 .dots button.active{background:var(--red); color:#fff;}
 
 main{flex:1 1 auto; overflow:hidden; position:relative;}
-.track{display:flex; height:100%; width:600%; transition:transform .32s cubic-bezier(.4,0,.2,1);}
-.panel{width:calc(100% / 6); height:100%; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:4px 18px 24px;}
+.track{display:flex; height:100%; width:700%; transition:transform .32s cubic-bezier(.4,0,.2,1);}
+.panel{width:calc(100% / 7); height:100%; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:4px 18px 24px;}
 
 .eyebrow{color:var(--red); font-weight:700; font-size:12px; letter-spacing:.04em; text-transform:uppercase; margin:6px 0 2px;}
 h1.title{font-size:23px; margin:0 0 4px; line-height:1.15;}
@@ -125,9 +125,9 @@ font-family:inherit;
 <header>
 <div class="top-row">
 <div class="brand"><span class="dot"></span><span>Guide de voyage</span></div>
-<div class="stepcount" id="stepcount">Étape 1/6</div>
+<div class="stepcount" id="stepcount">Étape 1/7</div>
 </div>
-<div class="progress"><div id="progressBar" style="width:16.6%"></div></div>
+<div class="progress"><div id="progressBar" style="width:14.3%"></div></div>
 <div class="dots" id="dots"></div>
 </header>
 
@@ -145,7 +145,7 @@ font-family:inherit;
 <p class="subtitle">Paris → Québec — 16 août 2026</p>
 <p class="intro">Salut Rafael ! C'est ton premier vol tout seul, direction le Canada pour tes études — un peu de trac, c'est normal. Ce guide t'accompagne étape par étape. Fais glisser vers la gauche ou utilise les boutons en bas pour avancer.</p>
 
-<div class="eyebrow">Étape 1/6</div>
+<div class="eyebrow">Étape 1/7</div>
 <h1 class="title">Avant le départ</h1>
 <p class="subtitle">Dimanche 16 août — vol à 14:10 depuis Paris CDG, terminal 2C</p>
 
@@ -167,6 +167,14 @@ font-family:inherit;
 <li>Télécharge quelques films/séries/musiques hors-ligne avant de partir.</li>
 </ul>
 
+<h2 class="sec">ArriveCAN (déclaration anticipée)</h2>
+<ul class="plain">
+<li>App gratuite (iOS/Android) ou site arrivecan.gc.ca. C'est <b>optionnel</b>, mais ça accélère nettement le passage à la douane à Montréal.</li>
+<li>À remplir entre <b>72h et quelques heures avant l'atterrissage</b> — donc idéalement le 15 ou tôt le 16 août, une fois passeport, permis d'études et infos de vol sous la main.</li>
+<li>Renseigne le motif du voyage (études), le vol AC 871 et déclare tes bagages.</li>
+<li>À la borne à Montréal, elle génère un code QR à scanner pour aller plus vite. Pas fait à temps ? Aucun problème, tu réponds aux questions manuellement à la borne.</li>
+</ul>
+
 <div class="box">
 <span class="label">ASTUCE</span>
 Glisse dans ton sac : lingettes désinfectantes, écouteurs perso, gourde vide (à remplir après la sécurité), un livre ou un jeu. La veille, prépare ton sac calmement et couche-toi tôt — départ pour l'aéroport tôt le matin.
@@ -175,7 +183,7 @@ Glisse dans ton sac : lingettes désinfectantes, écouteurs perso, gourde vide (
 
 <!-- PANEL 2 -->
 <section class="panel">
-<div class="eyebrow">Étape 2/6</div>
+<div class="eyebrow">Étape 2/7</div>
 <h1 class="title">À l'aéroport en France</h1>
 <p class="subtitle">Roissy-Charles-de-Gaulle, terminal 2C — arrive vers 11h (3h avant le vol)</p>
 
@@ -196,7 +204,7 @@ En cas de doute, il y a toujours un agent Air Canada pour t'aider — demande en
 
 <!-- PANEL 3 -->
 <section class="panel">
-<div class="eyebrow">Étape 3/6</div>
+<div class="eyebrow">Étape 3/7</div>
 <h1 class="title">Embarquement et à bord</h1>
 <p class="subtitle">Vol AC 871 · Paris CDG → Montréal YUL · siège 32H · durée 7h35</p>
 
@@ -242,7 +250,7 @@ Dégourdis-toi les jambes dans l'allée de temps en temps. Privilégie l'eau au 
 
 <!-- PANEL 4 -->
 <section class="panel">
-<div class="eyebrow">Étape 4/6</div>
+<div class="eyebrow">Étape 4/7</div>
 <h1 class="title">Arrivée à Montréal</h1>
 <p class="subtitle">Atterrissage 15:45 (heure locale) — aéroport Montréal-Trudeau (YUL)</p>
 
@@ -262,7 +270,7 @@ Montréal est ton premier point d'entrée au Canada, même si Québec est ta des
 
 <ol class="plain">
 <li>Suis les panneaux « Vols de correspondance / Connecting flights ».</li>
-<li>Borne automatisée : réponds aux questions (motif : études), récupère le reçu.</li>
+<li>Borne automatisée : réponds aux questions (motif : études), récupère le reçu — si tu as rempli ArriveCAN, scanne simplement le code QR de l'appli pour aller plus vite.</li>
 <li>Donne le reçu à un agent, qui t'oriente vers le comptoir « permis d'études ».</li>
 <li>Présente passeport, lettre d'introduction, CAQ, offre d'admission, preuves financières. Réponds calmement aux questions.</li>
 <li>L'agent imprime ton permis d'études et l'agrafe dans ton passeport.</li>
@@ -277,7 +285,7 @@ Montréal est ton premier point d'entrée au Canada, même si Québec est ta des
 
 <!-- PANEL 5 -->
 <section class="panel">
-<div class="eyebrow">Étape 5/6</div>
+<div class="eyebrow">Étape 5/7</div>
 <h1 class="title">Liaison vers Québec</h1>
 <p class="subtitle">Vol AC 7940 (Air Canada Express - Jazz) · Montréal → Québec · 18:50 → 19:41</p>
 
@@ -299,7 +307,7 @@ Dernière ligne droite. Pas besoin de courir : les panneaux « Connecting flight
 
 <!-- PANEL 6 -->
 <section class="panel">
-<div class="eyebrow">Étape 6/6</div>
+<div class="eyebrow">Étape 6/7</div>
 <h1 class="title">Arrivée à Québec</h1>
 <p class="subtitle">Atterrissage 19:41 — aéroport international Jean-Lesage (YQB)</p>
 
@@ -307,7 +315,7 @@ Dernière ligne droite. Pas besoin de courir : les panneaux « Connecting flight
 <ul class="plain">
 <li>Petit aéroport, facile à s'orienter.</li>
 <li>Récupère tes bagages au tapis — vol intérieur, pas de nouveau contrôle douanier.</li>
-<li>Dirige-toi vers le hall d'arrivée pour retrouver la personne qui vient te chercher.</li>
+<li>Dirige-toi vers le hall d'arrivée pour retrouver Mathieu, qui vient te chercher.</li>
 </ul>
 
 <h2 class="sec">Dernières choses à faire</h2>
@@ -319,7 +327,53 @@ Dernière ligne droite. Pas besoin de courir : les panneaux « Connecting flight
 <div class="bravo-emoji">🎉</div>
 <div class="box">
 <span class="label">BRAVO</span>
-Bienvenue au Québec, Rafael — tu as géré ton premier vol en solo comme un pro. Bonne installation et bonne rentrée à l'Université Laval !
+Bienvenue au Québec, Rafael — tu as géré ton premier vol en solo comme un pro. Prochaine étape : ton installation !
+</div>
+</section>
+
+<!-- PANEL 7 -->
+<section class="panel">
+<div class="eyebrow">Étape 7/7</div>
+<h1 class="title">Installation au Québec</h1>
+<p class="subtitle">Les démarches à faire dans tes premières semaines</p>
+
+<div class="box">
+<span class="label">DÉJÀ FAIT</span>
+Le logement et l'assurance habitation sont réglés — reste les démarches ci-dessous.
+</div>
+
+<h2 class="sec">Assurance maladie (RAMQ)</h2>
+<ul class="plain">
+<li>Grâce à l'entente France-Québec, tu as droit à la RAMQ (assurance maladie publique) gratuite comme un résident du Québec.</li>
+<li>Demande le formulaire <b>SE 401-Q-104</b> (étudiant) à ta CPAM en France — c'est ton attestation d'admissibilité à l'entente.</li>
+<li>Une fois à Québec, inscris-toi à la RAMQ avec ce formulaire + ton CAQ/permis d'études. Il y a un délai de carence au début : garde une assurance de voyage/santé valide en attendant que la RAMQ prenne effet.</li>
+<li>L'assurance médicaments RAMQ coûte environ 23 $/mois en 2026 — vérifie si l'assurance étudiante de l'Université Laval la couvre déjà.</li>
+</ul>
+
+<h2 class="sec">Ouvrir un compte bancaire</h2>
+<ul class="plain">
+<li><b>Banque Nationale</b> : compte étudiant sans frais mensuels pendant 3 ans, souvent citée comme la meilleure option pour les nouveaux arrivants au Québec.</li>
+<li><b>Desjardins</b> (compte Stratégique) : gratuit aussi pour les étudiants à temps plein, présent partout au Québec.</li>
+<li>Apporte passeport, permis d'études et preuve d'inscription à l'Université Laval pour ouvrir le compte en agence.</li>
+</ul>
+
+<h2 class="sec">Choisir un opérateur téléphonique</h2>
+<ul class="plain">
+<li><b>Fizz</b> : forfaits sans engagement, eSIM gratuite, très bien noté au Québec — une bonne option pour remplacer l'eSIM GoMoWorld une fois sur place.</li>
+<li>Alternatives sans contrat : <b>Public Mobile</b> ou <b>Koodo</b>.</li>
+<li>Compare les prix en Go/mois avant de choisir — les forfaits changent souvent.</li>
+</ul>
+
+<h2 class="sec">Trouver un ordinateur (MacBook)</h2>
+<ul class="plain">
+<li><b>Apple Education Store Canada</b> (apple.com/ca-edu) : remise étudiante avec ton adresse Université Laval, parfois accompagnée d'une carte-cadeau.</li>
+<li>Le <b>MacBook Neo</b>, le modèle Apple le plus abordable, démarre autour de 499 $ CAD au tarif éducation.</li>
+<li>Compare aussi Best Buy et les magasins physiques à Québec avant d'acheter — les promos varient selon la période.</li>
+</ul>
+
+<div class="box">
+<span class="label">ASTUCE</span>
+Pas besoin de tout régler la première semaine — RAMQ et compte bancaire sont prioritaires, le reste peut attendre la rentrée du 2 septembre.
 </div>
 </section>
 
@@ -334,7 +388,7 @@ Bienvenue au Québec, Rafael — tu as géré ton premier vol en solo comme un p
 <script>
 (function(){
 var STORAGE_KEY = 'rafael-trip-guide-v1';
-var total = 6;
+var total = 7;
 var current = 0;
 var track = document.getElementById('track');
 var dotsEl = document.getElementById('dots');
