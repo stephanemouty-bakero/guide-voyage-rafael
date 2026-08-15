@@ -45,8 +45,8 @@ color:var(--grey); font-size:11px; font-weight:700; font-family:inherit;
 .dots button.active{background:var(--red); color:#fff;}
 
 main{flex:1 1 auto; overflow:hidden; position:relative;}
-.track{display:flex; height:100%; width:700%; transition:transform .32s cubic-bezier(.4,0,.2,1);}
-.panel{width:calc(100% / 7); height:100%; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:4px 18px 24px;}
+.track{display:flex; height:100%; width:800%; transition:transform .32s cubic-bezier(.4,0,.2,1);}
+.panel{width:calc(100% / 8); height:100%; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:4px 18px 24px;}
 
 .eyebrow{color:var(--red); font-weight:700; font-size:12px; letter-spacing:.04em; text-transform:uppercase; margin:6px 0 2px;}
 h1.title{font-size:23px; margin:0 0 4px; line-height:1.15;}
@@ -125,9 +125,9 @@ font-family:inherit;
 <header>
 <div class="top-row">
 <div class="brand"><span class="dot"></span><span>Guide de voyage</span></div>
-<div class="stepcount" id="stepcount">Étape 1/7</div>
+<div class="stepcount" id="stepcount">Étape 1/8</div>
 </div>
-<div class="progress"><div id="progressBar" style="width:14.3%"></div></div>
+<div class="progress"><div id="progressBar" style="width:12.5%"></div></div>
 <div class="dots" id="dots"></div>
 </header>
 
@@ -145,7 +145,7 @@ font-family:inherit;
 <p class="subtitle">Paris → Québec — 16 août 2026</p>
 <p class="intro">Salut Rafael ! C'est ton premier vol tout seul, direction le Canada pour tes études — un peu de trac, c'est normal. Ce guide t'accompagne étape par étape. Fais glisser vers la gauche ou utilise les boutons en bas pour avancer.</p>
 
-<div class="eyebrow">Étape 1/7</div>
+<div class="eyebrow">Étape 1/8</div>
 <h1 class="title">Avant le départ</h1>
 <p class="subtitle">Dimanche 16 août — vol à 14:10 depuis Paris CDG, terminal 2C</p>
 
@@ -183,7 +183,7 @@ Glisse dans ton sac : lingettes désinfectantes, écouteurs perso, gourde vide (
 
 <!-- PANEL 2 -->
 <section class="panel">
-<div class="eyebrow">Étape 2/7</div>
+<div class="eyebrow">Étape 2/8</div>
 <h1 class="title">À l'aéroport en France</h1>
 <p class="subtitle">Roissy-Charles-de-Gaulle, terminal 2C — arrive vers 11h (3h avant le vol)</p>
 
@@ -204,7 +204,7 @@ En cas de doute, il y a toujours un agent Air Canada pour t'aider — demande en
 
 <!-- PANEL 3 -->
 <section class="panel">
-<div class="eyebrow">Étape 3/7</div>
+<div class="eyebrow">Étape 3/8</div>
 <h1 class="title">Embarquement et à bord</h1>
 <p class="subtitle">Vol AC 871 · Paris CDG → Montréal YUL · siège 32H · durée 7h35</p>
 
@@ -250,7 +250,7 @@ Dégourdis-toi les jambes dans l'allée de temps en temps. Privilégie l'eau au 
 
 <!-- PANEL 4 -->
 <section class="panel">
-<div class="eyebrow">Étape 4/7</div>
+<div class="eyebrow">Étape 4/8</div>
 <h1 class="title">Arrivée à Montréal</h1>
 <p class="subtitle">Atterrissage 15:45 (heure locale) — aéroport Montréal-Trudeau (YUL)</p>
 
@@ -285,7 +285,7 @@ Montréal est ton premier point d'entrée au Canada, même si Québec est ta des
 
 <!-- PANEL 5 -->
 <section class="panel">
-<div class="eyebrow">Étape 5/7</div>
+<div class="eyebrow">Étape 5/8</div>
 <h1 class="title">Liaison vers Québec</h1>
 <p class="subtitle">Vol AC 7940 (Air Canada Express - Jazz) · Montréal → Québec · 18:50 → 19:41</p>
 
@@ -307,7 +307,7 @@ Dernière ligne droite. Pas besoin de courir : les panneaux « Connecting flight
 
 <!-- PANEL 6 -->
 <section class="panel">
-<div class="eyebrow">Étape 6/7</div>
+<div class="eyebrow">Étape 6/8</div>
 <h1 class="title">Arrivée à Québec</h1>
 <p class="subtitle">Atterrissage 19:41 — aéroport international Jean-Lesage (YQB)</p>
 
@@ -333,7 +333,7 @@ Bienvenue au Québec, Rafael — tu as géré ton premier vol en solo comme un p
 
 <!-- PANEL 7 -->
 <section class="panel">
-<div class="eyebrow">Étape 7/7</div>
+<div class="eyebrow">Étape 7/8</div>
 <h1 class="title">Installation au Québec</h1>
 <p class="subtitle">Les démarches à faire dans tes premières semaines</p>
 
@@ -377,6 +377,39 @@ Pas besoin de tout régler la première semaine — RAMQ et compte bancaire sont
 </div>
 </section>
 
+<!-- PANEL 8 -->
+<section class="panel">
+<div class="eyebrow">Étape 8/8</div>
+<h1 class="title">Vivre en colocation</h1>
+<p class="subtitle">Ton logement est réglé — voici comment bien démarrer la vie à plusieurs</p>
+
+<h2 class="sec">Ce que dit le bail (Québec)</h2>
+<ul class="plain">
+<li><b>Colocataire ≠ occupant.</b> Un colocataire signe le bail et doit payer sa part du loyer ; un simple occupant (invité qui reste un moment) n'a aucune obligation envers le propriétaire.</li>
+<li><b>Obligation « conjointe » ou « solidaire ».</b> Par défaut, chacun ne paie que sa part du loyer (obligation conjointe). Mais si le bail précise que l'obligation est « solidaire », chaque colocataire peut être poursuivi pour la totalité du loyer si un autre ne paie pas. Vérifie bien ce point avec papa et maman en lisant le bail.</li>
+<li><b>Si un colocataire ne paie pas.</b> En obligation conjointe, tu n'es responsable que de ta part. Le propriétaire peut toutefois demander au Tribunal administratif du logement (TAL) de résilier le bail si un retard dépasse 3 semaines.</li>
+<li><b>Renouvellement de bail.</b> Chaque colocataire reçoit un avis séparé du propriétaire. Si un colocataire part et que tu restes, tu peux devenir responsable du loyer complet — à anticiper.</li>
+<li><b>Sous-location / céder sa place.</b> Possible, mais un avis écrit au propriétaire (et aux colocataires) est obligatoire, avec nom et adresse de la personne concernée.</li>
+<li><b>En cas de conflit sérieux</b> (loyer, dommages, propriétaire) : le Tribunal administratif du logement (TAL) est l'organisme à contacter — https://www.tal.gouv.qc.ca</li>
+</ul>
+
+<h2 class="sec">Les écueils à éviter entre colocataires</h2>
+<ul class="plain">
+<li><b>Mets tout au clair dès le premier jour.</b> Qui paie quoi et quand : loyer, Hydro-Québec (électricité), internet/wifi, épicerie commune ou séparée. Un petit tableau partagé évite bien des tensions.</li>
+<li><b>Fais un état des lieux à l'arrivée.</b> Prends des photos de ta chambre et des espaces communs (état, dommages existants) — utile en cas de désaccord au départ.</li>
+<li><b>Organise le ménage des espaces communs</b> (cuisine, salle de bain) avec un tour de rôle clair — c'est la première source de friction en colocation.</li>
+<li><b>Discute des invités et des horaires calmes</b> dès le départ, surtout en période d'examens.</li>
+<li><b>Communique tôt en cas de problème</b> plutôt que de laisser une frustration s'accumuler — une courte réunion de coloc de temps en temps aide beaucoup.</li>
+<li><b>Étiquette ta nourriture</b> et respecte les espaces communs comme tu voudrais qu'on respecte les tiens.</li>
+<li><b>Garde une trace écrite</b> (textos, courriels) des échanges importants avec le propriétaire ou tes colocataires — utile en cas de désaccord.</li>
+</ul>
+
+<div class="box">
+<span class="label">ASTUCE</span>
+Aucun membre de la famille n'a d'expérience en colocation — normal d'apprendre sur le tas. Le principal : de la communication claire dès le début et un bail bien compris valent mieux que d'improviser en cours de route.
+</div>
+</section>
+
 </div>
 </main>
 
@@ -388,7 +421,7 @@ Pas besoin de tout régler la première semaine — RAMQ et compte bancaire sont
 <script>
 (function(){
 var STORAGE_KEY = 'rafael-trip-guide-v1';
-var total = 7;
+var total = 8;
 var current = 0;
 var track = document.getElementById('track');
 var dotsEl = document.getElementById('dots');
